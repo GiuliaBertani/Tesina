@@ -1,0 +1,62 @@
+.rowJoyce {
+  background-color: white;
+  padding: 10% 15%% 15% 15%;
+  font-size: 20px;
+}
+.page-header{
+  margin-top: 30px;
+  border-bottom: 3px solid #1b6d85;
+}
+.col-md-5{
+  margin-right: 0px;
+}
+.col-md-3{
+  margin-left: 2%;
+}
+.col-md-4{
+  margin-left: 3%;
+}
+small{
+  margin-left: 2%;
+}
+.img-Guinness{
+  max-width: 450px;
+  margin-left: 10%;
+}
+.img-Ulysses{
+  margin-left: 15%;
+  margin-right: 15%;
+  
+}
+.btn.btn-default.btn-lg{
+  margin-left: 75%;
+  border-color: #1b6d85;
+}
+.btn.btn-default.btn-lg.Guinness {
+  margin-left: 35%;
+}
+
+.btn.btn-default.btn-lg.storia {
+  margin-left: 35%;
+}
+
+.glyphicon-home{
+font-size: 10px;
+}
+.keypointstitle {
+  margin-top: 1%;
+}
+.keypoints{
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+.keypoints li{
+  margin-bottom: 1%;
+  
+}
+.plot{
+  margin-top: 0px;
+  text-align: justify;
+}

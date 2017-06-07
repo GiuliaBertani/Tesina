@@ -1,0 +1,34 @@
+extends ../layout
+
+block head
+  title Storia
+
+block content
+  // Page Content
+  .container-fluid
+    // Portfolio Item Heading
+    .rowStoria
+      .col-lg-12
+        h1.page-header
+          | Lotta per l'indipendenza
+          small Azioni politiche e para-militari   
+          a.btn.btn-default.btn-lg.storia(href='/timeline.html#LittleMuseum' type='button')
+            span.glyphicon.glyphicon-home
+
+    .row
+      .col-md-4
+        img.img-responsive.img-Storia(src='./images/easter_rising.jpg', alt='')
+      .col-md-7
+        h3.keypointstitle Eventi Fondamentali:
+          ul.keypoints
+            li Union Act: consolidamento rigido dominio inglese sull'isola.
+            li Movimenti di resistenza: Repeal Association e Young Ireland. Progetti smmorzati dalla Grande Carestia
+            li Attentati della Fratellanza Feniana e apertura di Gladstone.
+            li Nuovi gruppi indipendentisti: Lega Agraria di Davitt, Lega Gaelica di intellettuali e l'Home Rule Party di Parnell.
+            li Richiesta per l'Home Rule al parlamento inglese: scontri tra unionisti e indipendentisti. Approvata, sarà effettiva dopo la prima guerra mondiale.
+            li 1922: riconosciuta sovranità allo stato irlandese con referendum per l'Ulster che spacca il paese. 
+            li 1949: l'Irlanda del Sud diventa ufficialmente una Repubblica confessionale e lascia il Commonwealth.
+        h3.plot Negli ultimi anni:
+        p  A causa della divisione nell’Irlanda del Nord iniziarono decenni di guerra civile e attentati che straziarono l’Irlanda del Nord.
+          | Durarono dal 1968, con il Bloody Sunday, fino al 2007 quando il primo ministro Paisley (storico oppositore dei cattolici) scelse di partecipare ad un governo di unità nazionale tra protestanti e cattolici.
+        

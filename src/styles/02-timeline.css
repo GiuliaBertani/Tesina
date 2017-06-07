@@ -1,0 +1,121 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(176, 167, 167, 0.24);
+}
+
+
+.subTitle {
+  text-align: center;
+}
+
+.subTitle a {
+  text-decoration: none;
+  color: black !important;
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+
+.container {
+  font: 25px normal Verdana, Geneva, sans-serif;
+  overflow: hidden;
+
+}
+.mappa{
+  background-image: url('./images/mappa_dublino.jpg');
+  background-position: top right;
+  height: 600px;
+  border: 10px solid white;
+  margin-bottom: 10%;
+}
+#Guinness{
+  height: 600px;
+}
+#LittleMuseum{
+  height: 400px;
+}
+.timeslot {
+  float: left;
+  margin: 0 0 40px;
+  padding: 10px 10px 0 0;
+  border-top: 8px solid #1b6d85;
+  position: relative;
+  height: 400px;
+  background-color: white;
+  -webkit-box-shadow: rgba(184,176,172,0.12);
+  font-size: 20px;
+}
+
+.timeslot img {
+  top: 20px;
+}
+.img-circle.img-responsive.img-center{
+  margin-left: 35%;
+  border: 2px solid #1b6d85;
+  margin-right: 0%;
+}
+
+.even {
+  -webkit-box-shadow: 0px 10px 5px rgba(184,176,172,0.12);
+}
+.even span {
+  color: #1b6d85;
+}
+.even img{
+  left: 0px;
+  right: 1 px;
+}
+.info {
+  font-size: 20px;
+
+}
+
+.col-sm-4{
+  border-top: 8px solid #1b6d85;
+  background-color: white;
+  padding-top: 2%;
+  margin-left: 2%;
+}
+.row.primo{
+  margin-top: 5%;
+  padding-top: 2%;
+
+}
+.row.secondo{
+  margin-bottom: 10%;
+
+  padding-top: 3%;
+}
+.row p{
+  font-size: 13px;
+  height: 135px;
+}
+.row h2{
+  text-align: center;
+  color: #1b6d85;
+  font-size: 25px;
+}
+
+.img-circle {
+  height: 100px;
+  
+}
+@media (max-width: 1024px)  {
+  .timeslot {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 767px) AND (max-width: 1024px)  {
+  .timeslot img {
+    min-width: 100%;
+    padding: 0 20%;
+  }
+}

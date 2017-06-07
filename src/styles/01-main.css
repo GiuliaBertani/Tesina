@@ -1,0 +1,123 @@
+html {
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+#logo {
+  max-height: 30px;
+}
+
+.body-page {
+
+}
+
+.body-page .body-page-bg {
+
+  background-position: center;
+  
+  background-image: url(./images/sfondo.jpg) ;
+
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+
+  background-color: white;
+
+}
+
+.header-container {
+
+  height: 100vh;
+
+  text-align: center;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  font-family: sans-serif;
+
+}
+
+.header-container .header-text {
+
+  margin-left: 30%;
+
+  margin-right: 25%;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  position: absolute;
+
+  border-radius: 30px;
+
+  padding-left: 20px;
+
+  padding-right: 20px;
+
+  padding-bottom: 40px;
+
+  color: white;
+
+}
+.titolo{
+  font-size: 45px;
+  margin-bottom: 10%;
+}
+
+.sottotitolo {
+  font-size: 20px;
+}
+.nome {
+  font-size: 18px;
+  text-align: center;
+}
+.header-container .header-bottone {
+
+  margin-top : 75px;
+
+}
+.header-container .header-bottone a {
+  
+  font-size: 20px;
+  
+  padding: 10px;
+  
+  border-radius: 15px;
+
+  border: 1px solid white;
+
+  color: white;
+
+  background-color: rgba(255, 255, 255, 0);
+
+  -webkit-transition-duration: 0.3s;
+
+  transition-duration: 0.3s;
+
+}
+
+.header-container .header-bottone a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+
+
