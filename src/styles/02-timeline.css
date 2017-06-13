@@ -27,12 +27,27 @@ p {
   overflow: hidden;
 
 }
+.introduzione{
+  height: 100vh;
+}
+.introduzione h1{
+  margin-top: 3%;
+  text-align: center;
+}
+.introduzione p {
+  text-align: justify;
+  margin-bottom: 3%;
+}
+.introduzione img{
+  height: 275px;
+}
 .mappa{
   background-image: url('./images/mappa_dublino.jpg');
   background-position: top right;
   height: 600px;
   border: 10px solid white;
   margin-bottom: 10%;
+  margin-top: 2%;
 }
 #Guinness{
   height: 600px;

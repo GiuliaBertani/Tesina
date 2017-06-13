@@ -2,10 +2,44 @@ extends ../layout
 
 block head
   title Timeline
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='styles.css')
+  script(src='http://code.jquery.com/jquery-latest.min.js', type='text/javascript')
+  script(src='script.js')
+  title CSS MenuMaker                                                               
 
 block content
-  include ../includes/navbar
+  #cssmenu
+    ul
+      li.active
+        a(href='#')
+          span Dublino
+      li
+        a(href='#Simboli')
+          span Simboli Tradizionali
+      li
+        a(href='#Mappa')
+          span Cartina
+      li
+        a(href='#Joyce')
+          span James Joyce
+      li
+        a(href='#Guinness')
+          span Guinness
+      li.last
+        a(href='#LittleMuseum')
+          span The Little Museum of Dublin
   .container
+    .introduzione
+        h1 Un tuffo nel cuore dell'Irlanda 
+        p Prima di iniziare a raccontarvi delle piccole meraviglie di questa città volevo spiegarvi il perché di questa scelta. In effetti Dublino è una capitale situata nella periferia Europea, uno stato che si è modernizzato soltanto negli ultimi anni e che rimane sempre un pò fuori dall’attenzione dei media e dal turismo di massa. 
+          | Eppure, l’anno scorso, mi sono ritrovata a lavorarci per un mese e non potevo restarne più affascinata. E' una capitale a misura d’uomo, in mese si riesce a vedere tutta più e più volte, ma non smette mai di stupire.
+          | E’ in generale una città moderna, non una grande metropoli come Londra o Parigi ma è proprio per questo che mi ha conquistata così tanto: il clima intimo e accogliente ti permettono di conoscerla a fondo e di sentirti partecipe della società locale.
+          | Oggi voglio cercare di farvi entrare nel clima di una città ricca di tradizioni ma pronta a farti sentire a casa.
+        img.col-sm-4.col-sm-push-1(src='./images/bimbo.jpg')
+        img.col-sm-4.col-sm-push-2(src='./images/ponte.jpg')
     .mappa#Mappa
     .row.primo#Simboli
       .col-sm-4.col-sm-push-1
@@ -22,50 +56,33 @@ block content
         img.img-circle.img-responsive.img-center(src='./images/Claddagh.jpg', alt='')
         h2 Claddagh
         p Il simbolo viene usato per decorare gli anelli di fidanzamento irlandesi. Le mani simboleggiano l'amicizia, la corona è simbolo di lealtà e il cuore dell'amore.
-          | Lo scopo per cui questo anello viene scelto è manifestato dal modo in cui viene indossato, il significato differisce infatti se portato nella mano destra o sinistra e anche nell'orientazione della punta del cuore. 
-        
+          | Lo scopo per cui questo anello viene scelto è manifestato dal modo in cui viene indossato, il significato differisce infatti se portato nella mano destra o sinistra e anche nell'orientazione della punta del cuore.
       .col-sm-4.col-sm-push-2
         img.img-circle.img-responsive.img-center(src='./images/Leprechaun.jpg', alt='')
         h2 Lepricano
         p
           | Il Leprechaun è un folletto che si diverte a fare scherzi. Si burla soprattutto degli avari e costruisce trappole geniali per i ladri. La leggenda narra che custodisca una pentola piena d’oro nascosta alla base dell’arcobaleno.
           | In Irlanda, per legge, se un Leprechaun bussa alla tua porta devi condividere con lui la tua cena!
-    //.timeslot
-      div.col-md-7.col-md-push-5
-        h2.subTitle The Spire
-        p E’ una torre di acciaio, costruita nel 2002, alta 120 m che si staglia nel cielo di Dublino.  Ma qual è la sua particolarità? Semplicemente che è la scultura più alta del mondo! Era stata costruita con la speranza che diventasse il simbolo internazionale della città, una sorta di “Tour Eiffel”, ma anche se così non è stato decisamente non passa inosservata.
-        p I cittadini la usano come punto d’incontro e i visitatori disorientati, alzando lo sguardo verso il cielo, riescono, dovunque siano, a ritrovarla. Il messaggio che questo grande ago ci lascia è ambiguo. L’interpretazione che mi ha maggiormente incuriosita è quella che vede nell’ago un’enorme siringa, rappresentazione della continua lotta di Dublino (ma di tutta la società moderna) contro la piaga della droga, portata avanti in città dagli anni ’90.
-      img.img-responsive.col-md-5.col-md-pull-7(src="./images/Spire.jpg")
     .timeslot.even#Joyce 
       div.col-md-7
         h2.subTitle James Joyce Statue
         p La statua, ai piedi della Spire, commemora uno degli scrittori irlandesi più famosi di tutti i tempi, nonostante il suo rapporto tormentato con la città ce ne lascia una realistica descrizione nei suoi due capolavori: Dubliners e Ulysses. 
         p Ogni anno, il 16 di giugno, viene celebrato dalla città con il Bloomsday: durante la giornata vengono rimessi in scena gli eventi salienti della giornata di Leopold Bloom (il protagonista di Ulysses).
-        a.info(href='/Joyce.html' type='button') Approfondisci...
+        a.info(href='./Joyce.html' type='button') Approfondisci...
       img.img-responsive.col-md-5(src="./images/Joyce.jpg")
-    //.timeslot
-      div.col-md-7.col-md-push-5
-        h2.subTitle Trinity College
-        p Duis acsi ullamcorper humo decet, incassum validus, appellatio in qui tation roto, lobortis brevitas epulae. Et ymo eu utrum probo ut, jugis, delenit.
-      img.img-responsive.col-md-5.col-md-pull-7(src="./images/Trinity.jpg")
-    //.timeslot.even
-      div.col-md-7
-        h2.subTitle My little museum of Dublin
-        p Duis acsi ullamcorper humo decet, incassum validus, appellatio in qui tation roto, lobortis brevitas epulae. Et ymo eu utrum probo ut, jugis, delenit.
-      img.img-responsive.col-md-5(src="./images/Museum.jpg")
     .timeslot#Guinness
       div.col-md-7.col-md-push-5
         h2.subTitle Guinness Storehouse
         p Tra i simboli della capitale irlandese non si può non ricordare la birra Guinness. Ad oggi la centenaria fabbrica è al primo posto tra i luoghi più visitati in Irlanda. L’edificio, riconvertito a museo, conta di sette piani ognuno con una tematica diversa: dagli ingredienti al meccanismo produttivo con particolare attenzione alle leggendarie campagne pubblicitarie.
         p Il Sg. Arthur Guinness avviò la produzione nel 1759 firmando un contratto della durata di 9000 anni con cui ottenne l’affitto del piccolo birrificio pre esistente per 45 sterline l’anno. Una scelta audace che decretò l'inizio di un grande colosso internazionale.
           |  Da quell’anno lo stabilimento continuò ad espandersi, moltiplicando la produzione e le esportazioni. Basti pensare che oggi vengono serviti più di 10 milioni di bicchieri di Guinness al giorno in tutto il mondo!
-        a.info(href='/Guinness.html' type='button') Approfondisci...
+        a.info(href='./Guinness.html' type='button') Approfondisci...
       img.img-responsive.col-md-5.col-md-pull-7(src="./images/chimica.jpg")
     .timeslot.even#LittleMuseum
       div.col-md-7
         h2.subTitle The little museum of Dublin
         p Questa è davvero una delle piccole gemme nascite nella città. Si tratta di un museo situato all’interno di un’antica di stile Georgiano casa che si affaccia sul grande parco Stephene Green. Tutti i 5000 pezzi della collezione sono stati donati dai cittadini e sono disposti cronologicamente in modo tale da raccontare la storia del 900 Irlandese.
          | Una storia molto fitta di eventi che ha come tema di fondo la lotta per l’indipendenza dal repressivo governo inglese.
-        a.info(href='/Storia.html' type='button') Approfondisci...
+        a.info(href='./Storia.html' type='button') Approfondisci...
       img.img-responsive.col-md-5(src="./images/mylittlemuseum.jpg")
-
+    
