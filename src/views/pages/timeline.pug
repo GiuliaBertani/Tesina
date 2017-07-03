@@ -11,39 +11,40 @@ block head
   title CSS MenuMaker                                                               
 
 block content
-  #cssmenu
-    ul
-      li.active
-        a(href='#')
-          span Dublino
-      li
-        a(href='#Simboli')
-          span Simboli Tradizionali
-      li
-        a(href='#Mappa')
-          span Cartina
-      li
-        a(href='#Joyce')
-          span James Joyce
-      li
-        a(href='#Guinness')
-          span Guinness
-      li.last
-        a(href='#LittleMuseum')
-          span The Little Museum of Dublin
-  .container
+  #wrapper
+    #cssmenu
+      ul
+        li.active
+          a(href='#timeline')
+            span Dublino
+        li
+          a(href='#Simboli' class="page-scroll")
+            span Simboli Tradizionali
+        li
+          a(href='#Mappa' class="page-scroll")
+            span Cartina
+        li
+          a(href='#Joyce' class="page-scroll")
+            span James Joyce
+        li
+          a(href='#Guinness' class="page-scroll")
+            span Guinness
+        li.last
+          a(href='#LittleMuseum' class="page-scroll")
+            span The Little Museum of Dublin
+  .container#timeline
     .introduzione
       h1 Un tuffo nel cuore dell'Irlanda 
-      p Prima di iniziare a raccontarvi delle piccole meraviglie di questa città volevo spiegarvi il perché di questa scelta.
+      p Prima di iniziare a raccontarvi delle piccole meraviglie di questa città volevo spiegarvi il perché della mia scelta. 
           | In effetti Dublino è la capitale di uno Stato, situato nella periferia Europea, che si è modernizzato soltanto negli ultimi anni e che rimane sempre un pò fuori dall’attenzione mediatica e dal turismo di massa. 
           | Eppure, quando l’anno scorso mi sono ritrovata a lavorarci e viverci per un mese, non potevo restarne più affascinata.
-          | E' una città a misura d’uomo, piccola e raccolta che si riesce a visitare in poco tempo ma non smette mai di stupire.
-          | E’ in generale una città moderna, non una grande metropoli come Londra o Parigi ma forse è proprio per questo che mi ha conquistata così tanto: 
-          | il clima intimo e accogliente ti permette di conoscerla a fondo, di sentirti parte della comunità locale e gli irlandesi sono sempre pronti a farvi sentire a casa.
-      p  Oggi voglio cercare di trasmettermi un pò della magia che vi ho trovato... e Buon Viaggio!
-        
-      img.col-sm-4.col-sm-push-1(src='./images/bimbo.jpg')
-      img.col-sm-4.col-sm-push-2(src='./images/ponte.jpg')
+          | E' una città piccola, a misura d'uomo, molto legata alle sue tradizioni ma allo stesso tempo vivace e cosmopolita. 
+          | Si riesce a visitare in poco tempo ma non smette mai di sorprendere: il clima intimo e accogliente, unito alla spontaneità degli irlandesi, ti permette di conoscerla a fondo e di sentirti a casa.
+      p  Oggi voglio cercare di trasmettervi un pò della magia che vi ho trovato... e Buon Viaggio!
+      
+      .row  
+        img.col-sm-4.col-sm-push-1(src='./images/bimbo.jpg')
+        img.col-sm-4.col-sm-push-2(src='./images/ponte.jpg')
     br
     .mappa#Mappa
     .row.primo#Simboli

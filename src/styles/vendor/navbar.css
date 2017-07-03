@@ -1,5 +1,10 @@
-.navbar.navbar-default{
+.navbar.navbar-default {
   background-color: #1b6d85;
   color: white;
+}
 
+#wrapper {
+  position: fixed;
+  z-index: 109101001;
+  width: 100%;
 }

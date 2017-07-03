@@ -30,11 +30,11 @@ footer {
 .body-page .body-page-bg {
 
   background-position: center;
-  
-  background-image: url(./images/sfondo.jpg) ;
+
+  background-image: url(./images/sfondo.jpg);
 
   background-repeat: no-repeat;
-  
+
   background-size: cover;
 
   background-color: white;
@@ -55,13 +55,11 @@ footer {
 
 .header-container .header-text {
 
-  margin-left: 30%;
+  left: 50%;
 
-  margin-right: 25%;
+  transform: translateX(-50%);  
 
-  top: 50%;
-
-  transform: translateY(-50%);
+  top: 30%;
 
   position: absolute;
 
@@ -76,7 +74,8 @@ footer {
   color: white;
 
 }
-.titolo{
+
+.titolo {
   font-size: 45px;
   margin-bottom: 10%;
 }
@@ -84,21 +83,24 @@ footer {
 .sottotitolo {
   font-size: 20px;
 }
+
 .nome {
   font-size: 18px;
   text-align: center;
 }
+
 .header-container .header-bottone {
 
-  margin-top : 75px;
+  margin-top: 75px;
 
 }
+
 .header-container .header-bottone a {
-  
+
   font-size: 20px;
-  
+
   padding: 10px;
-  
+
   border-radius: 15px;
 
   border: 1px solid white;
